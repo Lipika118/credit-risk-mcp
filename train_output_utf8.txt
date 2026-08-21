@@ -1,0 +1,17 @@
+Default rate in generated data: 0.115
+Test AUC: 0.708
+              precision    recall  f1-score   support
+
+           0       0.93      0.67      0.78       885
+           1       0.20      0.63      0.30       115
+
+    accuracy                           0.66      1000
+   macro avg       0.56      0.65      0.54      1000
+weighted avg       0.85      0.66      0.72      1000
+
+
+Saved model.pkl and scaler.pkl
+
+Sanity check:
+Risky applicant predicted default probability: 96.33%
+Safe applicant predicted default probability: 8.56%

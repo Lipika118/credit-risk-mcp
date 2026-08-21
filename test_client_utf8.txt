@@ -1,0 +1,76 @@
+C:\Users\lipik\OneDrive\Desktop\credit-risk-mcp\venv\Lib\site-packages\pydantic_settings\sources\utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined.
+  warnings.warn(
+[08/19/26 14:16:38] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+[08/19/26 14:16:43] INFO     Processing request of type           server.py:733
+                             ListToolsRequest                                  
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+[08/19/26 14:16:45] INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+                    INFO     Processing request of type           server.py:733
+                             CallToolRequest                                   
+=== AAPL RESULT ===
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Ticker: AAPL\nAltman Z-Score: 11.77\nRisk Zone: Safe zone (low bankruptcy risk)\n\nComponent ratios:\n  Working Capital / Total Assets: -0.049\n  Retained Earnings / Total Assets: -0.040\n  EBIT / Total Assets: 0.370\n  Market Cap / Total Liabilities: 15.848\n  Revenue / Total Assets: 1.158",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "Ticker: AAPL\nAltman Z-Score: 11.77\nRisk Zone: Safe zone (low bankruptcy risk)\n\nComponent ratios:\n  Working Capital / Total Assets: -0.049\n  Retained Earnings / Total Assets: -0.040\n  EBIT / Total Assets: 0.370\n  Market Cap / Total Liabilities: 15.848\n  Revenue / Total Assets: 1.158"
+  },
+  "isError": false
+}
+=== DISTRESSED RESULT (AMC) ===
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Ticker: AMC\nAltman Z-Score: -1.03\nRisk Zone: Distress zone (high bankruptcy risk)\n\nComponent ratios:\n  Working Capital / Total Assets: -0.130\n  Retained Earnings / Total Assets: -1.120\n  EBIT / Total Assets: -0.012\n  Market Cap / Total Liabilities: 0.214\n  Revenue / Total Assets: 0.605",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "Ticker: AMC\nAltman Z-Score: -1.03\nRisk Zone: Distress zone (high bankruptcy risk)\n\nComponent ratios:\n  Working Capital / Total Assets: -0.130\n  Retained Earnings / Total Assets: -1.120\n  EBIT / Total Assets: -0.012\n  Market Cap / Total Liabilities: 0.214\n  Revenue / Total Assets: 0.605"
+  },
+  "isError": false
+}
+=== RISKY PROFILE ===
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Default probability: 97.3%\nRisk band: High risk\n\nApplicant profile:\n  Annual income: 25000.0\n  Debt-to-income ratio: 0.9\n  Credit history: 1.0 years\n  Late payments (last 2 years): 6\n  Loan amount requested: 30000.0\n  Age: 24",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "Default probability: 97.3%\nRisk band: High risk\n\nApplicant profile:\n  Annual income: 25000.0\n  Debt-to-income ratio: 0.9\n  Credit history: 1.0 years\n  Late payments (last 2 years): 6\n  Loan amount requested: 30000.0\n  Age: 24"
+  },
+  "isError": false
+}
+=== SAFE PROFILE ===
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Default probability: 2.6%\nRisk band: Low risk\n\nApplicant profile:\n  Annual income: 120000.0\n  Debt-to-income ratio: 0.15\n  Credit history: 15.0 years\n  Late payments (last 2 years): 0\n  Loan amount requested: 10000.0\n  Age: 40",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "result": "Default probability: 2.6%\nRisk band: Low risk\n\nApplicant profile:\n  Annual income: 120000.0\n  Debt-to-income ratio: 0.15\n  Credit history: 15.0 years\n  Late payments (last 2 years): 0\n  Loan amount requested: 10000.0\n  Age: 40"
+  },
+  "isError": false
+}

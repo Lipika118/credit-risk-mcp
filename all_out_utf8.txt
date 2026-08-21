@@ -1,0 +1,39 @@
+Default rate in generated data: 0.115
+Test AUC: 0.707
+              precision    recall  f1-score   support
+
+           0       0.89      1.00      0.94       885
+           1       0.80      0.03      0.07       115
+
+    accuracy                           0.89      1000
+   macro avg       0.84      0.52      0.50      1000
+weighted avg       0.88      0.89      0.84      1000
+
+
+Saved model.pkl and scaler.pkl
+
+Sanity check:
+Risky applicant predicted default probability: 76.17%
+Safe applicant predicted default probability: 1.24%
+Name: mcp
+Version: 1.29.0
+Summary: Model Context Protocol SDK
+Home-page: https://modelcontextprotocol.io
+Author: Anthropic, PBC.
+Author-email: 
+License: MIT
+Location: C:\Users\lipik\OneDrive\Desktop\credit-risk-mcp\venv\Lib\site-packages
+Requires: anyio, httpx, httpx-sse, jsonschema, pydantic, pydantic-settings, pyjwt, python-multipart, pywin32, sse-starlette, starlette, typing-extensions, typing-inspection, uvicorn
+Required-by: 
+Traceback (most recent call last):
+  File "C:\Users\lipik\OneDrive\Desktop\credit-risk-mcp\test_client.py", line 2, in <module>
+    from mcp import ClientSession, StdioServerParameters
+ModuleNotFoundError: No module named 'mcp'
+=== TRAIN MODEL ===
+
+=== PIP SHOW ===
+
+=== SERVER.PY FAST MCP IMPORT ===
+from mcp.server.fastmcp import FastMCP
+
+=== MCP CLIENT TESTS ===
